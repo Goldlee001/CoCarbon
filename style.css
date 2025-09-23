@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: SFProDisplay, Adobe Heiti Std R, Heiti SC, "Microsoft Sans Serif", sans-serif;
+    /* border: 1px solid blue; */
 }
 
 body{
@@ -28,8 +29,35 @@ nav{
     width: 160px;
 }
 
-.all_ul{
-    display: none;
+.all_ul {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    background: #fff;
+}
+
+.all_ul ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all_ul ul li,
+.all_ul ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #cdcccc;
+}
+
+.all_ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all_ul ul li a.active {
+    color: #7d7c7c;
 }
 
 .all_reg{
@@ -49,8 +77,9 @@ nav{
 }
 
 .assets{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background: #fff;
     box-shadow: -30px -3px 6px rgba(214, 213, 213, 0.1),
     30px -3px 6px rgba(214, 213, 213, 0.1);
@@ -66,7 +95,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    font-size: 14px;
+    font-size: 12px;
     background: #EFF6F4;
     padding: 1rem .5rem;
     border-radius: 1rem;
@@ -254,6 +283,7 @@ nav{
 .new_containers{
     width: 100%;
     padding: 0 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .new_containers .achordiv{
@@ -261,6 +291,8 @@ nav{
     padding: 0 1rem;
     border: 1px solid #355E3B;
     border-radius: .5rem;
+    margin-bottom: 25px;
+    background: #ffffff;
 }
 
 .anchor_container{
@@ -317,4 +349,53 @@ nav{
     padding: .7rem 0;
     border-radius: .5rem;
     text-align: center;
+}
+
+.containers_anchor{
+    background: #fdfdfb;
+    padding-bottom: 1px;
+    border-radius: .5rem;
+    box-shadow: -2px 0px 9px #e0dfdf;
+}
+
+.anchor_container .row3{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.anchor_container .row3 .col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 7px;
+    padding: 0.5rem;
+    border: 1px solid #dbeede;
+    border-radius: .5rem;
+}
+
+.anchor_container .row3 .col .h2{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.anchor_container .row3 .col .p_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .9rem;
+    align-items: center;
+}
+
+.p_btn p{
+    font-size: 13px;
+}
+
+.p_btn button{
+    border: none;
+    background: #cbe8d0;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    color: #355E3B;
 }
