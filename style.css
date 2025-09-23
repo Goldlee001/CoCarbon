@@ -226,39 +226,136 @@ nav{
     font-size: 14px;
 }
 
-.all_about img{
-    width: 35px;
-    height: 35px;
+.notifi_container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  /* Add scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.all_about{
+.notifi_container .header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #093d24;
+  color: #fff;
+  text-align: center;
+}
+
+ .notifi_container .back-arrow {
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.notifi_container .header-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.notifi_container .content {
+  padding: 20px;
+}
+
+.notifi_container .content img{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    object-fit: cover;
+    border-radius: .5rem;
+    margin-bottom: 30px;
 }
 
-.all_about .col{
-    width: 100%;
-    margin-bottom: 2rem;
+.notifi_container .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1e1e;
+  line-height: 1.3;
 }
 
-.all_about .col a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 2rem;
+.notifi_container .details {
+  font-size: 12px;
+  color: #999;
+  margin: 10px 0 20px;
 }
 
-.all_about .col:hover{
-   transform: translateY(-2px);
-   transition: 1s ease-out;
-   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+.notifi_container .source {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555;
 }
 
-.all_about .col a{
+.notifi_container .date {
+  color: #999;
+}
+
+.notifi_container .main-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.notifi_container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.all_about .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.grid-item a{
     text-decoration: none;
-    color: #464545;
 }
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item  img {
+  width: 40px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #555;
+  font-weight: 600;
+}
+
 
 .vewall{
     background: #21593e;
@@ -275,7 +372,7 @@ nav{
 .vewall button{
     background: #eef1f03a;
     padding: .5rem .90rem;
-    border: .1rem solid #fff;
+    border: .1px solid #e5e5e5;
     border-radius: .2rem;
     color: #fff;
 }
@@ -352,7 +449,7 @@ nav{
 }
 
 .containers_anchor{
-    background: #fdfdfb;
+    background: #fbfbf7;
     padding-bottom: 1px;
     border-radius: .5rem;
     box-shadow: -2px 0px 9px #e0dfdf;
@@ -369,15 +466,10 @@ nav{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    font-size: 7px;
+    font-size: 11px;
     padding: 0.5rem;
     border: 1px solid #dbeede;
     border-radius: .5rem;
-}
-
-.anchor_container .row3 .col .h2{
-    font-size: 10px;
-    font-weight: 100;
 }
 
 .anchor_container .row3 .col .p_btn{
@@ -398,4 +490,205 @@ nav{
     padding: .2rem .5rem;
     border-radius: .5rem;
     color: #355E3B;
+}
+
+/* ALLIANCE */
+.alliance .container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #f0f2f5;
+}
+
+.alliance .header {
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.alliance .header-title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.alliance .card {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px 15px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Current Level Card */
+.alliance .current-level-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alliance .level-info {
+  display: flex;
+  align-items: center;
+}
+
+.alliance .circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.alliance .text-info .label {
+  margin: 0;
+  color: #777;
+  font-size: 0.9em;
+}
+
+.alliance .text-info .level {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.alliance .upgrade-link {
+  color: #2e8b57;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* Commission Card */
+.alliance .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alliance .card-title {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  color: #444;
+}
+
+.alliance .view-more {
+  color: #777;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.alliance .commission-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.alliance .commission-label {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.alliance .commission-value {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000;
+}
+
+.alliance .claim-button {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+/* Referrals Card */
+.alliance .referrals-card {
+  padding: 20px 10px;
+}
+
+.alliance .referral-metrics {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.alliance .metric-item {
+  flex: 1;
+  border-right: 1px solid #eee;
+  padding: 0 10px;
+}
+
+.alliance .metric-item:last-child {
+  border-right: none;
+}
+
+.alliance .metric-item .icon-group {
+  margin-bottom: 5px;
+}
+
+.alliance .metric-item i {
+  font-size: 1.5em;
+  color: #2e8b57;
+}
+
+.alliance .metric-label {
+  margin: 0;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.alliance .metric-value {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Refer Friends Card */
+.alliance .refer-friends-card .referral-item {
+  margin-top: 20px;
+}
+
+.alliance .referral-label {
+  margin: 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+.alliance .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.alliance .referral-text {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.alliance .copy-button {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  white-space: nowrap;
 }

@@ -1,9 +1,11 @@
-const navLinks = document.querySelectorAll(".all_ul ul li a");
+const notifiContainer = document.querySelector(".notifi_container");
+const openBtn = document.getElementById("notice_open");
+const closeBtn = document.getElementById("notice_close");
 
-navLinks.forEach(link => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        navLinks.forEach(l => l.classList.remove("active"));
-        this.classList.add("active");
-    });
+openBtn.addEventListener("click", () => {
+  notifiContainer.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  notifiContainer.style.display = "none";
 });
