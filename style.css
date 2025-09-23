@@ -34,8 +34,11 @@ nav{
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     background: #fff;
+    border-radius: 1rem;
+    box-shadow: -3px 8px 6px rgba(31, 30, 30, 0.1),
+    3px -3px 6px rgba(31, 30, 30, 0.1);
 }
 
 .all_ul ul {
@@ -81,8 +84,8 @@ nav{
     display: flex;
     /* justify-content: space-between; */
     background: #fff;
-    box-shadow: -30px -3px 6px rgba(214, 213, 213, 0.1),
-    30px -3px 6px rgba(214, 213, 213, 0.1);
+    box-shadow: -3px 8px 6px rgba(31, 30, 30, 0.1),
+    3px -3px 6px rgba(31, 30, 30, 0.1);
     width: 100%;
     color: #21593e;
     border-radius: 1rem;
