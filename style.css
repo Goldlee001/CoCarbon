@@ -494,8 +494,10 @@ nav{
 
 /* ALLIANCE */
 .alliance .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   width: 100%;
-  max-width: 450px;
   background-color: #f0f2f5;
 }
 
