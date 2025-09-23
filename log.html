@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Account</title>
+  <title>Login</title>
   <style>
     *{
         margin: 0;
@@ -13,27 +13,26 @@
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background-color: #fefef9;
-      display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 2rem;
+      height: 100%;
+      padding-top: 1.4rem;
     }
 
     .wrapper {
       text-align: center;
     }
 
-    /* Logo + Brand */
+    /* Logo */
     .logo img{
-      width: 100px;
-      margin-bottom: 25px;
+        width: 100px;
+        margin-bottom: 25px;
     }
 
     /* Form Card */
     .form-card {
       background: white;
-      width: 340px;
-      padding: 25px 20px;
+      width: 350px;
+      padding: 30px 25px;
       border-radius: 10px;
       box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
       text-align: left;
@@ -57,45 +56,7 @@
       outline: none;
     }
 
-    /* Captcha row */
-    .captcha-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .captcha-code {
-      background: #000;
-      color: #fff;
-      font-weight: bold;
-      font-size: 16px;
-      letter-spacing: 2px;
-      padding: 6px 10px;
-      border-radius: 4px;
-      text-align: center;
-    }
-
-    /* Checkbox row */
-    .checkbox {
-      display: flex;
-      gap: 0.5rem;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    .checkbox input {
-      margin-right: 6px;
-      width: auto;
-    }
-
-    .checkbox a {
-      color: #093d24;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    /* Register Button */
-    .register-btn {
+    .login-btn {
       width: 100%;
       background-color: #0c5231;
       color: white;
@@ -105,14 +66,14 @@
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
+      margin-top: 5px;
     }
 
-    .register-btn:hover {
+    .login-btn:hover {
       background-color: #093d24;
     }
 
-    /* Login link */
-    .login-link {
+    .register-link {
       text-align: center;
       display: block;
       font-size: 14px;
@@ -120,7 +81,7 @@
       color: #333;
     }
 
-    .login-link a {
+    .register-link a {
       color: #093d24;
       text-decoration: none;
       font-weight: 500;
@@ -132,9 +93,10 @@
     <div class="logo"><img src="./img/regi.png" alt=""></div>
 
     <div class="form-card">
-      <h2>Create Account</h2>
+      <h2>Welcome Back</h2>
 
       <select>
+        <option>Select Region</option>
         <option>Nigeria +234</option>
         <option>United States +1</option>
         <option>United Kingdom +44</option>
@@ -143,23 +105,10 @@
 
       <input type="text" placeholder="Please enter phone number">
       <input type="password" placeholder="Please enter password">
-      <input type="password" placeholder="Please confirm password">
 
-      <div class="captcha-row">
-        <input type="text" placeholder="Please enter the verification code">
-        <div class="captcha-code">2094</div>
-      </div>
+      <a href="./home.html"><button class="login-btn">Log in</button></a>
 
-      <input type="text" placeholder="Please enter referral code">
-
-      <div class="checkbox">
-        <input type="checkbox" checked>
-        <label>I have read and agree to the <a href="#">User Agreement</a></label>
-      </div>
-
-      <a href="./log.html"><button class="register-btn">Register</button></a>
-
-      <span class="login-link">Already have an account? <a href="#">Login</a></span>
+      <span class="register-link">Don't have an account? <a href="./index.html">Register</a></span>
     </div>
   </div>
 </body>
