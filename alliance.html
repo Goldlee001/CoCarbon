@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
-    <title>CoeCarbon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
+  <title>CoeCarbon</title>
 </head>
+
 <body>
-        <div class="all_ul">
-            <ul>
-                <li><a href="./home.html"><i class="fa-solid fa-house"></i> home</a></li>
-                <li><a href="./invest.html"><i class="fa-solid fa-chart-line"></i> Investment</a></li>
-                <li><a href="./alliance.html"  class="active"><i class="fa-solid fa-users"></i> Alliance</a></li>
-                <li><a href="./profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
-            </ul>
+  <div class="all_ul">
+    <ul>
+      <li><a href="./home.html"><i class="fa-solid fa-house"></i> home</a></li>
+      <li><a href="./invest.html"><i class="fa-solid fa-chart-line"></i> Investment</a></li>
+      <li><a href="./alliance.html" class="active"><i class="fa-solid fa-users"></i> Alliance</a></li>
+      <li><a href="./profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
+    </ul>
+  </div>
+
+  <section class="alliance">
+    <div class="alliance-wrapper">
+      <div class="alliance-header">CARBON ALLIANCE</div>
+
+      <div class="cards">
+             <!-- Current Level -->
+      <div class="alliance-card alliance-card1">
+        <div class="alliance-level-info">
+          <div class="alliance-circle"></div>
+          <div class="alliance-level-text">
+            <p class="alliance-label">Current Level</p>
+            <p class="alliance-level">LV.0</p>
+          </div>
         </div>
-
-    <section class="alliance cards">
-        <div class="container">
-  <div class="header">
-    <h1 class="header-title">CARBON ALLIANCE</h1>
-  </div>
-
-  <div class="card current-level-card">
-    <div class="level-info">
-      <div class="circle"></div>
-      <div class="text-info">
-        <p class="label">Current Level</p>
-        <p class="level">LV.0</p>
+        <a href="#" class="alliance-upgrade">Upgrade for More&gt;&gt;</a>
       </div>
-    </div>
-    <a href="#" class="upgrade-link">Upgrade for More&gt;&gt;</a>
-  </div>
 
-  <div class="card commission-card">
-    <div class="card-header">
-      <h3 class="card-title">Level 1 Commission</h3>
-      <a href="#" class="view-more">View More</a>
-    </div>
-    <div class="commission-details">
-      <div class="commission-item">
-        <p class="commission-label">Pending Commission</p>
-        <p class="commission-value">₦0</p>
-      </div>
-      <button class="claim-button">Claim</button>
-    </div>
-  </div>
-
-  <div class="card referrals-card">
-    <div class="referral-metrics">
-      <div class="metric-item">
-        <div class="icon-group">
-          <i class="fas fa-users"></i>
+      <!-- Commission -->
+      <div class="alliance-card">
+        <div class="alliance-commission-header">
+          <h3 class="alliance-commission-title">Level 1 Commission</h3>
+          <a href="#" class="alliance-view-more">View More</a>
         </div>
-        <p class="metric-label">Total Valid Referrals</p>
-        <p class="metric-value">0</p>
-      </div>
-      <div class="metric-item">
-        <div class="icon-group">
-          <i class="fas fa-list-alt"></i>
+        <div class="alliance-commission-body">
+          <div>
+            <p class="alliance-commission-label">Pending Commission</p>
+            <p class="alliance-commission-value">₦0</p>
+          </div>
+          <button class="alliance-claim-btn">Claim</button>
         </div>
-        <p class="metric-label">Pending Commission Count</p>
-        <p class="metric-value">0</p>
       </div>
-    </div>
-  </div>
 
-  <div class="card refer-friends-card">
-    <h3 class="card-title">Refer Friends</h3>
-    <div class="referral-item">
-      <p class="referral-label">Referral Code</p>
-      <div class="input-group">
-        <p class="referral-text">JQR35F</p>
-        <button class="copy-button">Copy</button>
+      <!-- Referrals -->
+      <div class="alliance-card">
+        <div class="alliance-referral-metrics">
+          <div class="alliance-metric">
+            <i class="fa-solid fa-users"></i>
+            <p class="alliance-metric-label">Total Valid Referrals</p>
+            <p class="alliance-metric-value">0</p>
+          </div>
+          <div class="alliance-metric">
+            <i class="fa-solid fa-file-alt"></i>
+            <p class="alliance-metric-label">Pending Commission Count</p>
+            <p class="alliance-metric-value">0</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="referral-item">
-      <p class="referral-label">Referral Link</p>
-      <div class="input-group">
-        <p class="referral-text">https://coecarbon.com/pages/auth/register?ref=JQR35F</p>
-        <button class="copy-button">Copy</button>
-      </div>
-    </div>
-  </div>
-</div>
-    </section>
 
-    <script src="./app.js"></script>
+      <!-- Refer Friends -->
+      <div class="alliance-card">
+        <h3 class="alliance-commission-title">Refer Friends</h3>
+        <div class="alliance-referral-item">
+          <p class="alliance-referral-label">Referral Code</p>
+          <div class="alliance-input-group">
+            <p class="alliance-referral-text">JQR35F</p>
+            <button class="alliance-copy-btn">Copy</button>
+          </div>
+        </div>
+        <div class="alliance-referral-item">
+          <p class="alliance-referral-label">Referral Link</p>
+          <div class="alliance-input-group">
+            <p class="alliance-referral-text">https://coecarbon.com/pages/auth/register?ref=JQR35F</p>
+            <button class="alliance-copy-btn">Copy</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
 </body>
+
 </html>
