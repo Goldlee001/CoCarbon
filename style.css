@@ -7,7 +7,7 @@
 }
 
 .all_body {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 nav {
@@ -32,7 +32,7 @@ nav {
 }
 
 .logo img {
-    width: 160px;
+    width: 190px;
 }
 
 .all_ul {
@@ -91,7 +91,6 @@ nav {
 .assets {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     background: #fff;
     box-shadow: -3px 8px 6px rgba(31, 30, 30, 0.1),
         3px -3px 6px rgba(31, 30, 30, 0.1);
@@ -269,7 +268,7 @@ nav {
 .notifi_container .back-arrow {
     font-size: 24px;
     margin-right: 15px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .notifi_container .header-title {
@@ -526,7 +525,7 @@ nav {
 .my_inve {
     display: flex;
     justify-content: center;
-    background: #1b4332;
+    background: #21593e;
     padding: 20px;
     width: 100%;
     height: 150px;
@@ -541,9 +540,10 @@ nav {
     width: 100%;
     height: 70px;
     position: relative;
-    top: -70px;
+    top: -80px;
     border-top: .1px solid #e3e2e2;
-    padding: 1.5rem;
+    padding: 1rem;
+    padding-top: 17px;
 }
 
 .view_more_card {
@@ -578,12 +578,12 @@ nav {
     padding: 8px;
     border-radius: .5rem;
     border: none;
-    background-color: #1b4332;
+    background-color: #21593e;
     color: #fff;
 }
 
 .view_more_card .ong_cont span {
-    color: #1b4332;
+    color: #21593e;
 }
 
 
@@ -612,11 +612,11 @@ nav {
 
 .rr2 .btn1 {
     color: #fff;
-    background: linear-gradient(to right, #1b4332, #63C139);
+    background: linear-gradient(to right, #21593e, #63C139);
 }
 
 .rr2 .btn2 {
-    background: linear-gradient(to right, #1b4332, #63C139);
+    background: linear-gradient(to right, #21593e, #63C139);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -636,7 +636,7 @@ nav {
 }
 
 .all_btn .btn1 {
-    background: #1b4332;
+    background: #21593e;
     color: #fff;
 }
 
@@ -646,194 +646,153 @@ nav {
 }
 
 /* ALLIANCE */
-
-.alliance-wrapper {
-    max-width: 400px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
-
-/* HEADER */
-.alliance-header {
-    background: #1b4332;
-    height: 100px;
+.alliance .my_inve {
     color: #fff;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 1.3rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.cards {
-    position: relative;
-    top: -50px;
+    height: 100px;
+    padding-top: 10px;
 }
 
 /* CARD BASE */
-.alliance-card {
-    background: #fff;
-    border-radius: 10px;
-    margin: 12px 10px;
+.alliance_cards {
+    background: #ffffff;
+    border-radius: 16px;
     padding: 15px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -5px 3px #cfcece8e,
+    0 5px 3px #cfcece8e;
 }
 
-.alliance-card1 {
-    background: #f9f9f9;
+.alliance_card {
+    background: #f7f6f6;
+    border-radius: 16px;
+    padding: 15px 0 2px 15px;
+    box-shadow: 0 0 8px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* CURRENT LEVEL */
-.alliance-level-info {
+.alliance .new_containers2 {
+    top: -55px;
+    padding-top: 15px;
+}
+
+.current_level {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 10px;
 }
 
-.alliance-circle {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #ddd;
+.level .level1 {
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
+    border: 2.5px solid #A6B4C4;
+    margin: 10px 0 0 10px;
+    padding: 7px;
 }
 
-.alliance-level-text .alliance-label {
-    font-size: 0.9rem;
-    color: #444;
-    margin: 0;
+.level .level2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2.5px solid #A6B4C4;
+    padding: 15px;
 }
 
-.alliance-level-text .alliance-level {
+.level .level3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #A6B4C4;
+}
+
+.current_level .current h2{
+    font-size: 21px;
     font-weight: bold;
-    font-size: 1rem;
-    margin: 0;
+    color: #21593e;
+    margin-bottom: 10px;
 }
 
-.alliance-upgrade {
-    display: inline-block;
-    float: right;
-    margin-top: -35px;
-    padding: 5px 10px;
-    background: #f1fff5;
-    color: #1b4332;
-    font-size: 0.85rem;
-    border-radius: 15px;
-    text-decoration: none;
-}
-
-/* COMMISSION */
-.alliance-commission-header {
+.btn_alli{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
 }
 
-.alliance-commission-title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.alliance-view-more {
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #1b4332;
-}
-
-.alliance-commission-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.alliance-commission-label {
-    font-size: 0.85rem;
-    color: #444;
-}
-
-.alliance-commission-value {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.alliance-claim-btn {
-    background: #1b4332;
-    color: #fff;
+.alliance_card .btn_alli button {
+    padding: 5px 15px;
     border: none;
-    border-radius: 6px;
-    padding: 8px 15px;
-    cursor: pointer;
+    background: linear-gradient(to right, #ffffff, #dee5e4);
+    border-radius: 20px;
+    color: #21593e;
+    font-weight: 500;
 }
 
-/* REFERRAL METRICS */
-.alliance-referral-metrics {
+.commission{
+    margin: 2rem 1rem;
+}
+
+.h2_p{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    gap: 10px;
+    align-items: center;
+    padding-bottom: 16px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.alliance-metric {
-    flex: 1;
-    background: #f9f9f9;
+.h2_p p{
+    color: #21593e;
+}
+
+.cards_alliance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eceeee;
+    padding: 15px;
     border-radius: 8px;
-    padding: 10px;
-    text-align: center;
 }
 
-.alliance-metric i {
-    font-size: 20px;
-    color: #1b4332;
-    margin-bottom: 5px;
-}
-
-.alliance-metric-label {
-    font-size: 0.8rem;
-    color: #555;
-}
-
-.alliance-metric-value {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/* REFER FRIENDS */
-.alliance-referral-item {
-    margin-top: 12px;
-}
-
-.alliance-referral-label {
-    font-weight: bold;
-    font-size: 0.85rem;
-    margin-bottom: 5px;
-}
-
-.alliance-input-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #f1f1f1;
-    border-radius: 6px;
-    padding: 8px 10px;
-}
-
-.alliance-referral-text {
-    font-size: 0.8rem;
-    word-break: break-all;
-    margin: 0;
-}
-
-.alliance-copy-btn {
-    background: #e9f8ec;
-    color: #1b4332;
+.cards_alliance button{
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 0.8rem;
+    background: #21593e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.pending{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #21593e;
     font-weight: bold;
 }
+.pending p,
+.total p{
+    color: #646464;
+    font-size: 13px;
+}
+.total_pending{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.total_pending .total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #eceeee;
+    border-radius: 8px;
+    padding: 5px 8.5px 15px;
+    text-align: center;
+    color: #21593e;
+    font-weight: bold;
+}
+
+
+
 
 /* PROFILE */
 .user_id img {

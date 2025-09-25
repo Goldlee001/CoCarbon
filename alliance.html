@@ -5,86 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
   <title>CoeCarbon</title>
 </head>
 
 <body>
-  <div class="all_ul">
-    <ul>
-      <li><a href="./home.html"><i class="fa-solid fa-house"></i> home</a></li>
-      <li><a href="./invest.html"><i class="fa-solid fa-chart-line"></i> Investment</a></li>
-      <li><a href="./alliance.html" class="active"><i class="fa-solid fa-users"></i> Alliance</a></li>
-      <li><a href="./profile.html"><i class="fa-regular fa-user"></i> Profile</a></li>
-    </ul>
-  </div>
+        <div class="all_ul">
+            <ul>
+                <li><a href="./home.html"><span class="material-symbols-outlined">home</span></i> home</a></li>
+                <li><a href="./invest.html"><span class="material-symbols-outlined">bid_landscape</span> Investment</a></li>
+                <li><a href="./alliance.html" class="active"><span class="material-symbols-outlined">groups</span></i> Alliance</a></li>
+                <li><a href="./profile.html"><span class="material-symbols-outlined">person</span> Profile</a></li>
+            </ul>
+        </div>
 
   <section class="alliance">
-    <div class="alliance-wrapper">
-      <div class="alliance-header">CARBON ALLIANCE</div>
+    <div class="my_inve">
+      <h2>CARBON ALLIANCE</h2>
+    </div>
 
-      <div class="cards">
-             <!-- Current Level -->
-      <div class="alliance-card alliance-card1">
-        <div class="alliance-level-info">
-          <div class="alliance-circle"></div>
-          <div class="alliance-level-text">
-            <p class="alliance-label">Current Level</p>
-            <p class="alliance-level">LV.0</p>
+    <div class="new_containers2">
+      <div class="alliance_card">
+        <div class="current_level">
+          <div class="level">
+            <div class="level1">
+              <div class="level2">
+                <div class="level3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="current">
+            <h2>Current Level</h2>
+            <p>LV.0</p>
           </div>
         </div>
-        <a href="#" class="alliance-upgrade">Upgrade for More&gt;&gt;</a>
-      </div>
-
-      <!-- Commission -->
-      <div class="alliance-card">
-        <div class="alliance-commission-header">
-          <h3 class="alliance-commission-title">Level 1 Commission</h3>
-          <a href="#" class="alliance-view-more">View More</a>
-        </div>
-        <div class="alliance-commission-body">
-          <div>
-            <p class="alliance-commission-label">Pending Commission</p>
-            <p class="alliance-commission-value">₦0</p>
-          </div>
-          <button class="alliance-claim-btn">Claim</button>
+        <div class="btn_alli">
+          <button>Upgrade for More>></button>
         </div>
       </div>
+    </div>
 
-      <!-- Referrals -->
-      <div class="alliance-card">
-        <div class="alliance-referral-metrics">
-          <div class="alliance-metric">
-            <i class="fa-solid fa-users"></i>
-            <p class="alliance-metric-label">Total Valid Referrals</p>
-            <p class="alliance-metric-value">0</p>
-          </div>
-          <div class="alliance-metric">
-            <i class="fa-solid fa-file-alt"></i>
-            <p class="alliance-metric-label">Pending Commission Count</p>
-            <p class="alliance-metric-value">0</p>
-          </div>
-        </div>
+    <div class="commission alliance_cards">
+      <div class="h2_p">
+        <h2>Level Commission</h2>
+        <p>View More</p>
       </div>
-
-      <!-- Refer Friends -->
-      <div class="alliance-card">
-        <h3 class="alliance-commission-title">Refer Friends</h3>
-        <div class="alliance-referral-item">
-          <p class="alliance-referral-label">Referral Code</p>
-          <div class="alliance-input-group">
-            <p class="alliance-referral-text">JQR35F</p>
-            <button class="alliance-copy-btn">Copy</button>
-          </div>
+      <div class="cards_alliance">
+        <div class="pending">
+          <p>Pending Commission</p>
+          <span>&#8358;0</span>
         </div>
-        <div class="alliance-referral-item">
-          <p class="alliance-referral-label">Referral Link</p>
-          <div class="alliance-input-group">
-            <p class="alliance-referral-text">https://coecarbon.com/pages/auth/register?ref=JQR35F</p>
-            <button class="alliance-copy-btn">Copy</button>
-          </div>
-        </div>
+        <button id="claim">Claim</button>
       </div>
+      <div class="total_pending">
+        <div class="total">
+          <span class="material-symbols-outlined">supervisor_account</span>
+          <p>Total Valid Referrals</p>
+          <span>0</span>
+        </div>
+        <div class="total">
+          <span class="material-symbols-outlined">account_balance_wallet</span>
+          <p>Pending Commission Count </p>
+          <span>0</span>
+        </div>
       </div>
     </div>
   </section>
