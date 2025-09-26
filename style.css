@@ -257,9 +257,11 @@ nav {
 }
 
 .notifi_container .header {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: #093d24;
     color: #fff;
     text-align: center;
@@ -657,8 +659,8 @@ nav {
     background: #ffffff;
     border-radius: 16px;
     padding: 15px;
-    box-shadow: 0 -5px 3px #cfcece8e,
-    0 5px 3px #cfcece8e;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    margin: 1rem 1rem;
 }
 
 .alliance_card {
@@ -671,6 +673,7 @@ nav {
 .alliance .new_containers2 {
     top: -55px;
     padding-top: 15px;
+    margin-bottom: 33px;
 }
 
 .current_level {
@@ -703,14 +706,14 @@ nav {
     background: #A6B4C4;
 }
 
-.current_level .current h2{
+.current_level .current h2 {
     font-size: 21px;
     font-weight: bold;
     color: #21593e;
     margin-bottom: 10px;
 }
 
-.btn_alli{
+.btn_alli {
     display: flex;
     justify-content: flex-end;
 }
@@ -724,11 +727,7 @@ nav {
     font-weight: 500;
 }
 
-.commission{
-    margin: 2rem 1rem;
-}
-
-.h2_p{
+.h2_p {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -737,11 +736,11 @@ nav {
     font-weight: bold;
 }
 
-.h2_p p{
+.h2_p p {
     color: #21593e;
 }
 
-.cards_alliance{
+.cards_alliance {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -750,7 +749,7 @@ nav {
     border-radius: 8px;
 }
 
-.cards_alliance button{
+.cards_alliance button {
     border: none;
     background: #21593e;
     color: #fff;
@@ -758,28 +757,31 @@ nav {
     border-radius: 8px;
 }
 
-.pending{
+.pending {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: #21593e;
     font-weight: bold;
 }
+
 .pending p,
-.total p{
+.total p {
     color: #646464;
     font-size: 13px;
 }
-.total_pending{
+
+.total_pending {
     width: 100%;
     display: flex;
-    align-items: center;
     gap: 5px;
     padding-top: 20px;
 }
 
-.total_pending .total{
+.total_pending .total {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -791,7 +793,81 @@ nav {
     font-weight: bold;
 }
 
+.refe_invi{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    bottom: 10px;
+}
 
+.refe_invi .refe_btn{
+    width: 45%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.refe_invi .invit_btn{
+    width: 45%;
+    border: none;
+    background: #21593e;
+    padding: 10px;
+    border-radius: 20px;
+     color: #fff;
+}
+
+.overview_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.overview{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 14px;
+    gap: 17px;
+}
+
+.term_total{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 5px;
+    border-radius: 8px;
+}
+
+.term_total span{
+    color: #21593e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.overview_icons .term_total{
+    font-size: 15px;
+}
+
+.no_data_card {
+    margin-bottom: 6rem;
+}
+
+.no_data_card img {
+    width: 100px;
+    height: 100px;
+}
+
+.data_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #aaa;
+    padding: 60px 0;
+}
 
 
 /* PROFILE */

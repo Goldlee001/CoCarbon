@@ -1,11 +1,41 @@
-const notifiContainer = document.querySelector(".notifi_container");
-const openBtn = document.getElementById("notice_open");
-const closeBtn = document.getElementById("notice_close");
+  const noticeContainer = document.getElementById("notice");
+  const noticeOpenBtn = document.getElementById("notice_open");
+  const noticeCloseBtn = document.getElementById("notice_close");
 
-openBtn.addEventListener("click", () => {
-  notifiContainer.style.display = "block";
-});
+  // Restore state for NOTICE
+  window.addEventListener("DOMContentLoaded", () => {
+    const isNoticeOpen = localStorage.getItem("noticeOpen");
+    noticeContainer.style.display = isNoticeOpen === "true" ? "block" : "none";
 
-closeBtn.addEventListener("click", () => {
-  notifiContainer.style.display = "none";
-});
+    const isRewardsOpen = localStorage.getItem("rewardsOpen");
+    rewardsContainer.style.display = isRewardsOpen === "true" ? "block" : "none";
+  });
+
+  if (noticeOpenBtn) {
+    noticeOpenBtn.addEventListener("click", () => {
+      noticeContainer.style.display = "block";
+      localStorage.setItem("noticeOpen", "true");
+    });
+  }
+
+  noticeCloseBtn.addEventListener("click", () => {
+    noticeContainer.style.display = "none";
+    localStorage.setItem("noticeOpen", "false");
+  });
+
+  // --- REWARDS PANEL ---
+  const rewardsContainer = document.getElementById("rewards");
+  const rewardsOpenBtn = document.getElementById("rewards_open");
+  const rewardsCloseBtn = document.getElementById("rewards_close");
+
+  if (rewardsOpenBtn) {
+    rewardsOpenBtn.addEventListener("click", () => {
+      rewardsContainer.style.display = "block";
+      localStorage.setItem("rewardsOpen", "true");
+    });
+  }
+
+  rewardsCloseBtn.addEventListener("click", () => {
+    rewardsContainer.style.display = "none";
+    localStorage.setItem("rewardsOpen", "false");
+  });

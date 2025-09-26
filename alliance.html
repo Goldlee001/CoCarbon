@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/5b702f1e5f.js" crossorigin="anonymous"></script>
   <title>CoeCarbon</title>
 </head>
 
 <body>
-        <div class="all_ul">
-            <ul>
-                <li><a href="./home.html"><span class="material-symbols-outlined">home</span></i> home</a></li>
-                <li><a href="./invest.html"><span class="material-symbols-outlined">bid_landscape</span> Investment</a></li>
-                <li><a href="./alliance.html" class="active"><span class="material-symbols-outlined">groups</span></i> Alliance</a></li>
-                <li><a href="./profile.html"><span class="material-symbols-outlined">person</span> Profile</a></li>
-            </ul>
-        </div>
+  <div class="all_ul">
+    <ul>
+      <li><a href="./home.html"><span class="material-symbols-outlined">home</span></i> home</a></li>
+      <li><a href="./invest.html"><span class="material-symbols-outlined">bid_landscape</span> Investment</a></li>
+      <li><a href="./alliance.html" class="active"><span class="material-symbols-outlined">groups</span></i>
+          Alliance</a></li>
+      <li><a href="./profile.html"><span class="material-symbols-outlined">person</span> Profile</a></li>
+    </ul>
+  </div>
 
   <section class="alliance">
     <div class="my_inve">
@@ -57,7 +58,7 @@
           <p>Pending Commission</p>
           <span>&#8358;0</span>
         </div>
-        <button id="claim">Claim</button>
+        <button id="rewards_open">Claim</button>
       </div>
       <div class="total_pending">
         <div class="total">
@@ -67,8 +68,133 @@
         </div>
         <div class="total">
           <span class="material-symbols-outlined">account_balance_wallet</span>
-          <p>Pending Commission Count </p>
+          <p>Pending Commission <br> Count </p>
           <span>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="notifi_container" id="rewards">
+      <div class="header">
+        <span class="material-symbols-outlined" id="rewards_close">arrow_back_ios</span>
+        <span class="header-title">Referral Rewards</span>
+      </div>
+
+      <div class="alliance_cards" style="padding: 0;">
+        <div class="pending">
+          <p style="padding:15px 15px 10px; border-bottom: 1px solid #33333350;">Referral You have bound 0 valid
+            referrers</p>
+        </div>
+        <div class="total_pending" style="padding: 0 15px 15px;">
+          <div class="total" style="padding: 10px 12px 0;">
+            <span>&#8358;0</span>
+            <p>Current Total <br> Locked Commission</p>
+          </div>
+          <div class="total" style="padding: 10px 12px 0;">
+            <span>&#8358;0</span>
+            <p>Available <br> This Week</p>
+          </div>
+        </div>
+      </div>
+      <div class="alliance_cards">
+        <div class="h2_p">
+          <h2>Commission Count</h2>
+        </div>
+        <div class="data_card">
+          <img src="./img/no data.png" alt="">
+          <span>No Data</span>
+        </div>
+      </div>
+
+      <div class="alliance_cards refe_invi">
+        <button class="refe_btn">All Referrals</button>
+        <button class="invit_btn">Invite & Earn</button>
+      </div>
+    </div>
+
+    <div class="alliance_cards">
+      <div class="h2_p">
+        <h2>Refer Friends</h2>
+      </div>
+      <div class="pending">
+        <p style="padding-bottom: 10px;">Referrals Friend</p>
+      </div>
+      <div class="cards_alliance">
+        <span style="font-weight: bold; color: #21593e;">JQR35F</span>
+        <button>Copy</button>
+      </div>
+      <div class="pending">
+        <p style="padding: 15px 0 10px 0;">Referrals Friend</p>
+      </div>
+      <div class="cards_alliance">
+        <span style="font-size: 13px; font-weight: bold; color: #21593e;">https://coecarbon.com/pages/a
+          uth/register?ref=JQR35F</span>
+        <button>Copy</button>
+      </div>
+    </div>
+    <div class="alliance_cards">
+      <div class="h2_p">
+        <h2>Refer Friends</h2>
+      </div>
+      <div class="overview_cards">
+        <div class="overview">
+          <div class="term_total">
+            <p>Term Count</p>
+            <span>0</span>
+          </div>
+          <div class="term_total">
+            <p>Investor Count</p>
+            <span>0</span>
+          </div>
+          <div class="term_total">
+            <p>Total Commission</p>
+            <span>&#8358;0</span>
+          </div>
+        </div>
+        <div class="overview">
+          <div class="term_total" style=" background: rgba(64, 158, 255, 0.1);">
+            <span class="material-symbols-outlined" style="color: rgb(64, 158, 255);">person</span>
+            <p>Term Count</p>
+          </div>
+          <div class="term_total" style=" background: rgba(103, 194, 58, 0.1)">
+            <span class="material-symbols-outlined" style="color: rgb(103, 194, 58);">attach_money</span>
+            <p>Investor Count</p>
+          </div>
+          <div class="term_total" style=" background: rgba(230, 162, 60, 0.1)">
+            <span class="material-symbols-outlined" style="color: rgb(230, 162, 60);">redeem</span>
+            <p>Reward Rules</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alliance_cards no_data_card">
+      <div class="h2_p">
+        <h2>Level Commission</h2>
+        <p id="notice_open">View More</p>
+      </div>
+      <div class="data_card">
+        <img src="./img/no data.png" alt="">
+        <span>No Data</span>
+      </div>
+
+    </div>
+
+    <div class="notifi_container" id="notice">
+      <div class="header">
+        <span class="material-symbols-outlined" id="notice_close">arrow_back_ios</span>
+        <span class="header-title">Commission Details</span>
+      </div>
+
+      <div class="alliance_cards">
+        <div class="pending" style="text-align: center;">
+          <p style="margin-bottom: 0;">Total Commission</p>
+          <span style="font-size: 20px;">&#8358;0</span>
+        </div>
+      </div>
+      <div class="alliance_cards">
+        <div class="data_card">
+          <img src="./img/no data.png" alt="">
+          <span>No Data</span>
         </div>
       </div>
     </div>
