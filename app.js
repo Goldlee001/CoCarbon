@@ -39,3 +39,18 @@
     rewardsContainer.style.display = "none";
     localStorage.setItem("rewardsOpen", "false");
   });
+
+  
+   const depositBtn = document.querySelector(".deposit-button");
+  const depositContainer = document.getElementById("deposit");
+  const closeDeposit = document.getElementById("deposit_close");
+
+  // Open the deposit container
+  depositBtn.addEventListener("click", () => {
+    depositContainer.style.display = "block";
+  });
+
+  // Close the deposit container
+  closeDeposit.addEventListener("click", () => {
+    depositContainer.style.display = "none";
+  });

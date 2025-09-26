@@ -793,7 +793,7 @@ nav {
     font-weight: bold;
 }
 
-.refe_invi{
+.refe_invi {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -801,30 +801,30 @@ nav {
     bottom: 10px;
 }
 
-.refe_invi .refe_btn{
+.refe_invi .refe_btn {
     width: 45%;
     border: none;
     padding: 10px;
     border-radius: 20px;
 }
 
-.refe_invi .invit_btn{
+.refe_invi .invit_btn {
     width: 45%;
     border: none;
     background: #21593e;
     padding: 10px;
     border-radius: 20px;
-     color: #fff;
+    color: #fff;
 }
 
-.overview_cards{
+.overview_cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.overview{
+.overview {
     width: 100%;
     display: flex;
     text-align: center;
@@ -833,7 +833,7 @@ nav {
     gap: 17px;
 }
 
-.term_total{
+.term_total {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -841,13 +841,13 @@ nav {
     border-radius: 8px;
 }
 
-.term_total span{
+.term_total span {
     color: #21593e;
     font-size: 18px;
     font-weight: bold;
 }
 
-.overview_icons .term_total{
+.overview_icons .term_total {
     font-size: 15px;
 }
 
@@ -869,11 +869,15 @@ nav {
     padding: 60px 0;
 }
 
+.reward_claim {
+    background: #f5f7fa;
+}
+
 
 /* PROFILE */
 .user_id img {
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -885,7 +889,7 @@ nav {
     font-weight: 700;
     font-size: 18px;
     width: 100%;
-    height: 43vh;
+    height: 46vh;
 }
 
 .pro_noti_p {
@@ -902,8 +906,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    font-size: 14px;
+    gap: 9px;
+    font-size: 13px;
 }
 
 .user_id button {
@@ -913,6 +917,7 @@ nav {
     color: #ffffff;
     background: #faad14;
     font-weight: 700;
+    font-size: 12px;
 }
 
 .user_id p {
@@ -921,25 +926,22 @@ nav {
 
 .profile_asset {
     position: relative;
-    top: -80px;
-    padding: 0 1.2rem;
+    top: -100px;
     margin-bottom: 3rem;
 }
 
 /* CARD BASE STYLE */
-.profile_asset .card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: -0 2px 5px rgba(0, 0, 0, 0.1),
-        0 -2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-}
-
-.profile_asset .card-title {
+.profile_asset .card_title {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_title span{
+    color: #21593e;font-weight: bold;
 }
 
 /* ASSET OVERVIEW */
@@ -955,7 +957,6 @@ nav {
 .profile_asset .asset-label,
 .balance-label {
     font-size: 0.9em;
-    /* color: #777; */
 }
 
 .profile_asset .asset-value {
@@ -1009,7 +1010,7 @@ nav {
 }
 
 /* BALANCE PLUS */
-.profile_asset .balance-plus .card-header {
+.profile_asset .balance-plus .card_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1024,8 +1025,6 @@ nav {
 
 /* ASSET MANAGEMENT */
 .asset-management {
-    max-width: 350px;
-    margin: 20px auto;
     background: white;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1033,49 +1032,168 @@ nav {
     font-family: Arial, sans-serif;
 }
 
-/* Title */
-.card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 12px 15px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
-}
-
 /* Grid layout */
 .management-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
 }
 
 /* Grid item styling */
 .grid-item1 {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     justify-content: center;
-    padding: 0;
+    padding: 20px;
+    border-top: 1px solid #ddd;
     border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
 /* Hover effect */
-.grid-item:hover {
-    background: #f9f9f9;
+.grid-item1:hover {
+  background: #f0f0f0;
 }
 
 /* Icon styling */
 .grid-icon {
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: bold;
     color: #1b4332;
-    margin-bottom: 5px;
 }
 
 /* Label styling */
 .grid-label {
-    font-size: 0.9rem;
+    font-size: .7rem;
+    font-weight: bold;
     color: #333;
     text-align: center;
 }
+
+
+.security_center {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-top: 1px solid #ddd;
+    padding: 1rem;
+}
+
+    .language-selector {
+        width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    select {
+      appearance: none; /* Remove default arrow */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 8px 30px 8px 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+      background: transparent;
+    }
+
+    /* Custom arrow ">" */
+    .language-selector::after {
+      content: "›"; /* Unicode looks like > */
+      position: absolute;
+      right: 2px;
+      font-size: 1.2rem;
+      color: #333;
+      pointer-events: none; /* Click passes through */
+    }
+
+
+    /* DEPOSIT AND WITHDRAW */
+    .deposit-container {
+      background: #fff;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .amountbox_p{
+        background: #eeeeee;
+        padding: 10px;
+        margin-top: 16px;
+        border-radius: 10px;
+    }
+
+.amountbox_p p{
+    margin-bottom: 0;
+}
+
+    .amount-input {
+      display: flex;
+      align-items: center;
+      background: #eeeeee;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 12px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .amount-input input{
+        background: transparent;
+    }
+
+    .amount-input span {
+      margin-right: 5px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .amount-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .amount-buttons button {
+      background: #f1f1f1;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .remarks{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .remarks p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .confirm-btn {
+      background: #14532d;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      width: 90%;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 20px;
+    }
+
+    .confirm-btn:hover {
+      background: #0d4022;
+    }
